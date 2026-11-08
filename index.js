@@ -8,7 +8,7 @@ app.use(express.json())
 
 // Home route
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.send('Crew-board backwnd is connected')
 })
 
 // Employee routes
