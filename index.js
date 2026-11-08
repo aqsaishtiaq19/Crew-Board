@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
 app.use('/api/employees', employeeRoutes)
 
 // Start server
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000')
+app.listen(7979, () => {
+  console.log('Server is running on http://localhost:7979')
 })
