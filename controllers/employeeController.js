@@ -12,7 +12,10 @@ const addEmployee = async (req, res) => {
     res.status(500).json({
       message: error.message
     })
-  }
+
+const employeesWithExcessLeave = employees.filter((employee) => {
+  return employee.totalLeave > 3
+})}
 }
 
 export { addEmployee }
