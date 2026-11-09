@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
 // Employee routes
 app.use('/api/employees', employeeRoutes)
 
+import authRoutes from './routes/authRoutes.js'
+
+app.use('/api/auth', authRoutes)         
+app.use('/api/employees', employeeRoutes)
+
 // Connect to the database, then start the server
 const start = async () => {
   await connectDB()
